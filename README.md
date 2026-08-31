@@ -60,9 +60,10 @@ An asynchronous, AI-powered terminal application that gathers news clusters, syn
    pip install -r requirements.txt
 
 4. **Set up your environment variables:**
+   ```bash
    Create a .env file in the root directory:
    GEMINI_API_KEY=your_google_genai_api_key_here
 
-5. **Run the application:**
+6. **Run the application:**
    ```bash
    python main.py
