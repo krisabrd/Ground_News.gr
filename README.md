@@ -61,7 +61,7 @@ An asynchronous, AI-powered terminal application that gathers news clusters, syn
 
 4. **Set up your environment variables:**
    Create a .env file in the root directory:
-    GEMINI_API_KEY=your_google_genai_api_key_here
+   GEMINI_API_KEY=your_google_genai_api_key_here
 
 5. **Run the application:**
    ```bash
