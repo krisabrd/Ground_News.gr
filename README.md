@@ -52,7 +52,7 @@ An asynchronous, AI-powered terminal application that gathers news clusters, syn
 2. **Create and activate a virtual environment:**
    ```bash
    python -m venv venv
-   source venv/bin/activate 
+   source venv/Scripts/activate 
 
 3. **Install dependencies:**
    ```bash
@@ -63,6 +63,10 @@ An asynchronous, AI-powered terminal application that gathers news clusters, syn
    Create a .env file in the root directory:
    GEMINI_API_KEY=your_google_genai_api_key_here
 
-6. **Run the application:**
+5. **Install requirements:**
+   ```bash
+   pip install -r requirements.txt
+
+7. **Run the application:**
    ```bash
    python main.py
