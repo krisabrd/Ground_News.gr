@@ -10,7 +10,6 @@ def extract_key_words(user_sentence: str) -> str:
 
     keywords = [word for word in words if word not in GREEK_STOP_WORDS and len(word) > 2]
 
-    # Output: str (Cleaned space-separated keywords)
     return ' '.join(keywords)  
 
 
@@ -23,8 +22,7 @@ def clean_article_text(raw_text):
     
     text = re.sub(r'<[^>]+>', '', raw_text)
     text = re.sub(r'\[\+\d+\s+chars\]', '', text)
-
-    # Output: str (Clean, normalized text string)
+    
     return ' '.join(text.split())
 
 
@@ -62,7 +60,6 @@ def fetch_greek_news(user_sentence: str) -> list[dict]:
                 "published_at": article.get("publishedAt"),
             })
 
-        # Output: list[dict] (List of raw article objects)
         return cleaned_articles
 
     except requests.exceptions.RequestException as e:
