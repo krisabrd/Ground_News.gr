@@ -49,7 +49,6 @@ async def summarize_cluster_async(client, cluster):
     prompt = build_ground_news_prompt(cluster)
 
     try:
-        # Use generate_content directly on the async client (.aio.models)
         response = await client.aio.models.generate_content(
             model="gemini-3.6-flash",
             contents=prompt
