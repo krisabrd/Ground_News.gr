@@ -48,7 +48,7 @@ An asynchronous, AI-powered terminal application that gathers news clusters, syn
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/krisabrd/Ground_News.gr.git](https://github.com/krisabrd/Ground_News.gr.git)
-   cd news-bias-analyzer
+   cd Ground_News.gr
    
 2. **Create and activate a virtual environment:**
    ```bash
