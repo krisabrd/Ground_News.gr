@@ -1,5 +1,0 @@
-requests
-python-dotenv
-rich
-google-genai
-scikit-learn
