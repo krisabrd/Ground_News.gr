@@ -11,8 +11,7 @@ An asynchronous, AI-powered terminal application that gathers news clusters, syn
 | **`main.py`** | **Application Orchestrator**: Manages the CLI execution flow, handles asynchronous pipeline coordination, and delegates layout rendering. |
 | **`fetcher.py`** | **Data Acquisition**: Handles asynchronous web requests and API integration to fetch and parse raw news cluster data. |
 | **`analyzer.py`** | **Machine Learning Engine**: Implements Scikit-learn models to process news text, feature-extract themes, and map media bias spectrum distribution. |
-| **`ai_service.py`** | **LLM Integration**: Interacts with the Google GenAI SDK to generate concise summaries, neutral Ground News cards, and Greek-language coverage insights. |
-| **`ui.py`** | **Terminal UI Renderer**: Uses the `rich` library to build styled panels, tables, layout grids, and visual bias breakdown indicators in the CLI. |
+| **`summarize.py`** | **LLM Summarization & Prompting: Stores the structured prompts given to Gemini via Google GenAI, calling the API to synthesize news clusters and generate Ground News-style analysis. |
 | **`config.py`** | **Settings & Environment**: Loads application configurations, constants, and API setup using `python-dotenv`. |
 | **`requirements.txt`** | **Dependencies**: Lists all external Python modules required to build and run the application. |
 | **`.env`** *(ignored)* | **Secrets**: Stores private credentials such as API keys and environment variables securely. |
