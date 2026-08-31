@@ -69,21 +69,3 @@ def group_similar_articles(articles, similarity_threshold=0.25):
         })
 
     return clusters
-
-if __name__ == "__main__":
-    from fetcher import fetch_greek_news
-
-    test_prompt = "εκλογές Ελλάδα"
-    raw_articles = fetch_greek_news(test_prompt)
-
-    clustered_data = group_similar_articles(raw_articles)
-
-    print(f"Clustered into {len(clustered_data)} unique stories:\n")
-    for cluster in clustered_data:
-        print(
-            f"--- Story #{cluster['topic_id']}: {cluster['main_title']} ({cluster['article_count']} articles) ---"
-        )
-        print(f"Bias Breakdown: {cluster['bias_distribution']}")
-        for art in cluster["articles"]:
-            print(f"  • [{art['bias']}] {art['source']}: {art['title']}")
-        print()
