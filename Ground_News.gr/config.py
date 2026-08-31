@@ -6,7 +6,6 @@ load_dotenv('API.env')
 NEWS_API_KEY = os.getenv('NEWS_API_KEY')
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
 
-# API Configuration
 NEWS_API_URL = "https://newsapi.org/v2/everything"
 
 # Greek Stop Words for Keyword Extraction
